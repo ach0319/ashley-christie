@@ -1,1 +1,91 @@
-﻿
+﻿.landing-app {
+  background-color: rgb(235, 235, 181);
+  height: 95vh;
+}
+
+.typewriter {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border: 4px dashed rgb(6, 56, 6);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-left: 5rem;
+  position: absolute;
+  bottom: 30%;
+}
+
+.type_1,
+.type_2,
+.type_3 {
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide text behind the cursor */
+  margin: 0.5rem auto;
+  font-family: "Major Mono Display", monospace;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(6, 56, 6);
+}
+
+.type_1 {
+  border-right: 2px solid rgb(6, 56, 6);
+
+  /* define animation types for text + cursor */
+  animation: animated-text__1 6s steps(24, end) 1s 1 normal both,
+    animated-cursor__1 900ms steps(5, end);
+}
+
+.type_2 {
+  border-right: 2px solid rgb(6, 56, 6);
+
+  /* define animation types for text + cursor */
+  animation: animated-text__1 6s steps(16, end) 1s 1 normal both,
+    animated-cursor__1 900ms steps(5, end) 8;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
+.type_3 {
+  border-right: 2px solid rgb(6, 56, 6);
+
+  /* define animation types for text + cursor */
+  animation: animated-text__2 5s steps(10, end) 1s 1 normal both,
+    animated-cursor__2 900ms steps(5, end) infinite;
+  -webkit-animation-delay: 14s;
+  animation-delay: 14s;
+}
+
+@keyframes animated-cursor__1 {
+  from {
+    border-right-color: rgba(17, 17, 17, 0.9);
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes animated-cursor__2 {
+  from {
+    border-right-color: rgba(17, 17, 17, 0.9);
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes animated-text__1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45rem;
+  }
+}
+
+@keyframes animated-text__2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 29rem;
+  }
+}

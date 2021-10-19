@@ -1,1 +1,30 @@
-﻿
+﻿* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  background-color: rgb(235, 235, 181);
+  height: 70px;
+  width: 100%;
+}
+
+.nav-links ul {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  height: 70px;
+  line-height: 70px;
+}
+
+.nav-links li {
+  list-style: none;
+  margin-right: 5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(6, 56, 6);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
