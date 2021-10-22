@@ -1,1 +1,81 @@
-﻿
+﻿* {
+  margin: 0;
+  padding: 0;
+}
+
+.about-page {
+  background-color: rgb(235, 235, 181);
+  height: 90vh;
+}
+
+.about-me p {
+  color: rgb(6, 56, 6);
+  font-size: 1.75rem;
+  font-family: "Major Mono Display", monospace;
+  font-weight: bold;
+}
+
+.technologies p {
+  color: rgb(6, 56, 6);
+  font-size: 1.75rem;
+  font-family: "Major Mono Display", monospace;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.technologies img {
+  width: 50px;
+  height: 50px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1280px) {
+  .about-me p {
+    font-size: 1.5rem;
+  }
+
+  .technologies p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about-me p {
+    font-size: 1rem;
+  }
+
+  .technologies p {
+    font-size: 1rem;
+  }
+
+  .profile-picture img {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .about-me p {
+    font-size: 0.75rem;
+  }
+
+  .technologies p {
+    font-size: 0.75rem;
+  }
+
+  .technologies img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .profile-picture img {
+    width: 160px;
+    height: 200px;
+  }
+}

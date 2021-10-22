@@ -1,4 +1,9 @@
-﻿.landing-app {
+﻿* {
+  margin: 0;
+  padding: 0;
+}
+
+.landing-app {
   background-color: rgb(235, 235, 181);
   height: 95vh;
 }
@@ -25,67 +30,202 @@
   font-size: 3rem;
   font-weight: bold;
   color: rgb(6, 56, 6);
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
 }
 
-.type_1 {
-  border-right: 2px solid rgb(6, 56, 6);
-
-  /* define animation types for text + cursor */
-  animation: animated-text__1 6s steps(24, end) 1s 1 normal both,
-    animated-cursor__1 900ms steps(5, end);
-}
-
-.type_2 {
-  border-right: 2px solid rgb(6, 56, 6);
-
-  /* define animation types for text + cursor */
-  animation: animated-text__1 6s steps(16, end) 1s 1 normal both,
-    animated-cursor__1 900ms steps(5, end) 8;
-  -webkit-animation-delay: 7s;
-  animation-delay: 7s;
-}
-.type_3 {
-  border-right: 2px solid rgb(6, 56, 6);
-
-  /* define animation types for text + cursor */
-  animation: animated-text__2 5s steps(10, end) 1s 1 normal both,
-    animated-cursor__2 900ms steps(5, end) infinite;
-  -webkit-animation-delay: 14s;
-  animation-delay: 14s;
-}
-
-@keyframes animated-cursor__1 {
-  from {
-    border-right-color: rgba(17, 17, 17, 0.9);
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  to {
-    border-right-color: rgba(255, 255, 255, 0.8);
+  100% {
+    opacity: 1;
   }
 }
 
-@keyframes animated-cursor__2 {
-  from {
-    border-right-color: rgba(17, 17, 17, 0.9);
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  to {
-    border-right-color: rgba(255, 255, 255, 0.8);
-  }
-}
-
-@keyframes animated-text__1 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 45rem;
+  100% {
+    opacity: 1;
   }
 }
 
-@keyframes animated-text__2 {
-  from {
-    width: 0;
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  to {
-    width: 29rem;
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.star-one {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: rgb(6, 56, 6);
+  margin-bottom: 5rem;
+  animation: pulse 1s linear infinite;
+}
+
+.star-two {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: rgb(6, 56, 6);
+  margin-left: 20rem;
+  margin-bottom: 5rem;
+  animation: pulse 2s linear infinite;
+}
+
+.star-three {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: rgb(6, 56, 6);
+  margin-bottom: 5rem;
+  animation: pulse 1s linear infinite;
+}
+
+.star-four {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: rgb(6, 56, 6);
+  margin-left: 20rem;
+  animation: pulse 2s linear infinite;
+}
+
+.star-five {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: rgb(6, 56, 6);
+  margin-top: 5rem;
+  animation: pulse 1s linear infinite;
+}
+
+.star-grid {
+  position: absolute;
+  bottom: 15%;
+  left: 55%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .typewriter {
+    width: 50%;
+  }
+
+  .type_1,
+  .type_2,
+  .type_3 {
+    font-size: 2.5rem;
+  }
+
+  .star-grid {
+    left: 65%;
+  }
+
+  .star-two {
+    margin-left: 15rem;
+  }
+
+  .star-four {
+    margin-left: 15rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .typewriter {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: 4px dashed rgb(6, 56, 6);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    position: absolute;
+    bottom: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    left: 10%;
+  }
+
+  .star-one,
+  .star-two,
+  .star-three,
+  .star-four,
+  .star-five {
+    margin-bottom: 1rem;
+  }
+
+  .star-four {
+    margin-left: 35rem;
+  }
+
+  .star-two {
+    margin-left: 25rem;
+  }
+
+  .star-three {
+    margin-left: 15rem;
+  }
+
+  .star-grid {
+    left: 10%;
+    bottom: 1%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .typewriter {
+    width: 90%;
+    bottom: 50%;
+    left: 4%;
+  }
+
+  .type_1,
+  .type_2,
+  .type_3 {
+    font-size: 1.5rem;
+  }
+
+  .star-grid {
+    display: none;
   }
 }
