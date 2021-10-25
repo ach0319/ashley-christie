@@ -27,7 +27,7 @@ function About() {
           Beyond the company of my computer, I love to read books, write short
           stories and spend time outdoors
         </p>
-        <p>Technologies</p>
+        <p>Technologies:</p>
         <img src={html}></img>
         <img src={css}></img>
         <img src={javascript}></img>

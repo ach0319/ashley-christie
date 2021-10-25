@@ -1,1 +1,45 @@
-﻿
+﻿* {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-section {
+  background-color: rgb(235, 235, 181);
+  height: 70vh;
+  font-family: monospace;
+  color: rgb(6, 56, 6);
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 15rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.blue {
+  color: blue;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+.contact-section img {
+  width: 75px;
+  height: 75px;
+  margin-right: 4rem;
+  margin-top: 2rem;
+}
+
+.github {
+  width: 100px;
+  height: 100px;
+}
+
+.email {
+  background-color: rgb(6, 56, 6);
+  color: rgb(235, 235, 181);
+  text-decoration: none;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.connect {
+  margin-top: 5rem;
+}

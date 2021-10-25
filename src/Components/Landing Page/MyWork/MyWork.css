@@ -1,1 +1,124 @@
-﻿
+﻿* {
+  margin: 0;
+  padding: 0;
+}
+
+.projects-section {
+  background-color: rgb(235, 235, 181);
+  font-family: monospace;
+  height: 100%;
+}
+
+.fav-fonts,
+.house-hero,
+.tutor-me,
+.When-RU-Free,
+.luna,
+.device-loaner {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  padding-top: 15rem;
+}
+
+.mobile {
+  height: 300px;
+  width: 150px;
+  position: relative;
+  right: 2%;
+  box-shadow: 0.5rem 0.5rem black;
+}
+
+.laptop {
+  height: 400px;
+  width: 600px;
+  box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
+}
+
+.caption {
+  width: 50%;
+}
+
+.caption h3 {
+  font-size: 2rem;
+  color: rgb(6, 56, 6);
+  font-weight: bold;
+}
+
+.caption p {
+  font-size: 1.25rem;
+  color: rgb(6, 56, 6);
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+.caption ul {
+  list-style: none;
+}
+
+.caption li {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+.html {
+  background-color: orange;
+}
+
+.css {
+  background-color: blue;
+  color: white;
+}
+
+.js {
+  background-color: yellow;
+}
+
+.solo {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+.group {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.bs {
+  background-color: purple;
+  color: white;
+}
+
+.react {
+  background-color: black;
+  color: white;
+}
+.caption a {
+  background-color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-right: 1rem;
+  padding: 0.75rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  color: rgb(6, 56, 6);
+  font-weight: bold;
+}
+
+hr {
+  width: 80%;
+  border-top: 3px solid rgb(6, 56, 6);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 12rem;
+}
+
+.device-loaner p {
+  margin-left: 1.5rem;
+}
