@@ -5,7 +5,7 @@
 
 .about-page {
   background-color: rgb(235, 235, 181);
-  height: 90vh;
+  height: 100vh;
 }
 
 .about-me p {
@@ -13,14 +13,29 @@
   font-size: 1.75rem;
   font-family: "Major Mono Display", monospace;
   font-weight: bold;
+  text-align: center;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  padding-top: 6rem;
 }
 
+.icons {
+  margin: auto;
+  width: 20%;
+}
 .technologies p {
   color: rgb(6, 56, 6);
   font-size: 1.75rem;
   font-family: "Major Mono Display", monospace;
   margin-top: 1rem;
   font-weight: bold;
+  text-align: center;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }
 
 .technologies img {
@@ -29,51 +44,67 @@
   margin-top: 1rem;
   margin-bottom: 3rem;
   margin-left: 1rem;
+  margin-right: auto;
 }
 
 .profile-picture img {
   border-radius: 50%;
   height: 300px;
   width: 250px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media only screen and (max-width: 1280px) {
   .about-me p {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 
   .technologies p {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
+  }
+
+  .icons {
+    margin: auto;
+    width: 30%;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .about-me p {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .technologies p {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .profile-picture img {
     width: 200px;
     height: 250px;
   }
+  .icons {
+    margin: auto;
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 375px) {
+  .about-me {
+    width: 100%;
+  }
   .about-me p {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   .technologies p {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   .technologies img {
-    width: 40px;
-    height: 40px;
+    width: 21px;
+    height: 21px;
   }
 
   .profile-picture img {

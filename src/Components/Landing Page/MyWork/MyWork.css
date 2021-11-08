@@ -17,7 +17,7 @@
 .device-loaner {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 60%;
   margin-right: auto;
   margin-left: auto;
   align-items: center;
@@ -27,8 +27,9 @@
 .mobile {
   height: 300px;
   width: 150px;
-  position: relative;
-  right: 2%;
+  position: absolute;
+  left: 45%;
+  margin-top: 7rem;
   box-shadow: 0.5rem 0.5rem black;
 }
 
@@ -40,12 +41,14 @@
 
 .caption {
   width: 50%;
+  margin-left: 2rem;
 }
 
 .caption h3 {
   font-size: 2rem;
   color: rgb(6, 56, 6);
   font-weight: bold;
+  margin-left: 2rem;
 }
 
 .caption p {
@@ -53,9 +56,11 @@
   color: rgb(6, 56, 6);
   font-weight: bold;
   margin-top: 1.5rem;
+  margin-left: 2rem;
 }
 .caption ul {
   list-style: none;
+  margin-left: 2rem;
 }
 
 .caption li {
@@ -109,6 +114,7 @@
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   color: rgb(6, 56, 6);
   font-weight: bold;
+  margin-left: 2rem;
 }
 
 hr {
@@ -121,4 +127,152 @@ hr {
 
 .device-loaner p {
   margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 1280px) {
+  .mobile {
+    height: 250px;
+    width: 125px;
+    position: absolute;
+    left: 45%;
+    margin-top: 4rem;
+    box-shadow: 0.5rem 0.5rem black;
+  }
+
+  .laptop {
+    height: 300px;
+    width: 500px;
+    box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
+  }
+
+  .fav-fonts,
+  .house-hero,
+  .tutor-me,
+  .When-RU-Free,
+  .luna,
+  .device-loaner {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mobile {
+    height: 200px;
+    width: 100px;
+    position: absolute;
+    left: 65%;
+    margin-top: 4rem;
+    box-shadow: 0.5rem 0.5rem black;
+  }
+
+  .laptop {
+    height: 250px;
+    width: 375px;
+    box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
+  }
+
+  .fav-fonts,
+  .house-hero,
+  .tutor-me,
+  .When-RU-Free,
+  .luna,
+  .device-loaner {
+    width: 85%;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .caption {
+    width: 100%;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+
+  .caption h3 {
+    font-size: 1.75rem;
+    color: rgb(6, 56, 6);
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+
+  .caption p {
+    font-size: 1rem;
+    color: rgb(6, 56, 6);
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .caption li {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .caption ul {
+    list-style: none;
+    margin-left: 1rem;
+  }
+
+  .caption a {
+    background-color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    color: rgb(6, 56, 6);
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .fav-fonts,
+  .house-hero,
+  .tutor-me,
+  .When-RU-Free,
+  .luna,
+  .device-loaner {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    padding-top: 5rem;
+  }
+
+  .caption {
+    width: 100%;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+
+  .mobile {
+    height: 150px;
+    width: 75px;
+    position: absolute;
+    left: 75%;
+    margin-top: 1rem;
+    box-shadow: 0.5rem 0.5rem black;
+  }
+
+  .laptop {
+    height: 150px;
+    width: 300px;
+    box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
+  }
+
+  .caption li {
+    margin-bottom: 1.5rem;
+  }
+
+  hr {
+    margin-top: 5rem;
+  }
 }

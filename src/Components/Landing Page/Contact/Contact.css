@@ -13,6 +13,13 @@
   padding-top: 15rem;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
+}
+
+.contact {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .blue {
@@ -42,4 +49,64 @@
 
 .connect {
   margin-top: 5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-section {
+    font-size: 1.5rem;
+  }
+
+  .email {
+    padding: 1.25rem;
+  }
+
+  .contact-section img {
+    width: 50px;
+    height: 50px;
+    margin-right: 4rem;
+    margin-top: 2rem;
+    position: relative;
+    left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .contact-section {
+    background-color: rgb(235, 235, 181);
+    height: 100vh;
+    font-family: monospace;
+    color: rgb(6, 56, 6);
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding-top: 10rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .email {
+    background-color: rgb(6, 56, 6);
+    color: rgb(235, 235, 181);
+    text-decoration: none;
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .blue {
+    margin-bottom: 3rem;
+  }
+
+  .connect {
+    margin-top: 3rem;
+  }
+
+  .contact-section img {
+    width: 40px;
+    height: 40px;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    position: relative;
+    left: 1rem;
+  }
 }

@@ -28,11 +28,13 @@ function About() {
           stories and spend time outdoors
         </p>
         <p>Technologies:</p>
-        <img src={html}></img>
-        <img src={css}></img>
-        <img src={javascript}></img>
-        <img src={bootstrap}></img>
-        <img src={react}></img>
+        <div className="icons">
+          <img src={html}></img>
+          <img src={css}></img>
+          <img src={javascript}></img>
+          <img src={bootstrap}></img>
+          <img src={react}></img>
+        </div>
       </div>
       <div className="profile-picture">
         <img src={profile}></img>

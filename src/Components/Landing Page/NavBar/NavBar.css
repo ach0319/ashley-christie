@@ -4,12 +4,12 @@
 }
 
 .nav-links {
-  background-color: rgb(235, 235, 181);
+  background-color: rgb(6, 56, 6);
   height: 70px;
   width: 100%;
 }
 
-.nav-links ul {
+.nav-links nav {
   display: flex;
   flex-direction: row;
   float: right;
@@ -24,7 +24,7 @@
 
 .nav-links a {
   text-decoration: none;
-  color: rgb(6, 56, 6);
+  color: rgb(235, 235, 181);
   font-weight: bold;
   font-size: 1.25rem;
   font-family: "Major Mono Display", monospace;
