@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import NavBar from "./Components/Landing Page/NavBar/NavBar";
 import About from "./Components/Landing Page/About/About";
 import Projects from "./Components/Landing Page/MyWork/MyWork";

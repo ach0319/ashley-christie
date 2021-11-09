@@ -29,3 +29,13 @@
   font-size: 1.25rem;
   font-family: "Major Mono Display", monospace;
 }
+
+@media only screen and (max-width: 1024px) {
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .nav-links li {
+    margin-right: 2.5rem;
+  }
+}
