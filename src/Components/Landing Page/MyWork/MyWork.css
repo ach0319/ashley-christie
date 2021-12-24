@@ -14,7 +14,8 @@
 .tutor-me,
 .When-RU-Free,
 .luna,
-.device-loaner {
+.device-loaner,
+.zodaily {
   display: flex;
   flex-direction: row;
   width: 60%;

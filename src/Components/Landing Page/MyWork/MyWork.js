@@ -8,12 +8,47 @@ import Tutormobile from "./Images/TutoringMobile.png";
 import TutorMe from "./Images/TutorMeApplication.png";
 import WhenMobile from "./Images/WhenRUFreeMobile.PNG";
 import WhenRUFree from "./Images/WhenRUFree.png";
-import luna from "./Images/LunaPerformanceImage.png";
+import lunaWeb from "./Images/lunaWeb.png";
+import lunaMobile from "./Images/lunaMobile.png"
 import device from "./Images/LandingPageScreenshot.PNG";
+import zodailyWeb from "./Images/zodailyWeb.png";
+import zodailyMobile from "./Images/zodailyMobile.png";
 
 function Projects() {
   return (
     <div className="projects-section">
+      <div className="zodaily">
+        <div className="images">
+          <img className="laptop" src={zodailyWeb}></img>
+          <img className="mobile" src={zodailyMobile}></img>
+        </div>
+        <div className="caption">
+          <h3>ZODAILY</h3>
+          <p>
+          ZODAILY is a mobile-responsive application built with an API (Astro-API) that provides users with their daily horoscope with just a click on their zodiac sign. Along with the daily horoscope, the user also find out which sign they are compatible with, lucky number, lucky time, color and date range.
+          </p>
+          <ul>
+          <li className="tech">
+              <mark className="html">HTML</mark>
+            </li>
+            <li className="tech">
+              <mark className="css">CSS</mark>
+            </li>
+            <li className="tech">
+              <mark className="js">JavaScript</mark>
+            </li>
+            <li className="tech">
+              <mark className="react">React</mark>
+            </li>
+            <li className="tech">
+              <mark className="group">TEAM PROJECT</mark>
+            </li>
+          </ul>
+          <a href="https://chingu-voyages.github.io/v35-geckos-team-07/">LIVE LINK</a>
+          <a href="https://github.com/chingu-voyages/v35-geckos-team-07">VIEW CODE</a>
+        </div>
+      </div>
+      <hr></hr>
       <div className="device-loaner">
         <div className="images">
           <img className="laptop" src={device}></img>
@@ -52,7 +87,8 @@ function Projects() {
       <hr></hr>
       <div className="luna">
         <div className="images">
-          <img className="laptop" src={luna}></img>
+          <img className="laptop" src={lunaWeb}></img>
+          <img className="mobile" src={lunaMobile}></img>
         </div>
         <div className="caption">
           <h3>Luna Performance</h3>
@@ -73,6 +109,9 @@ function Projects() {
             </li>
             <li className="tech">
               <mark className="bs">Bootstrap</mark>
+            </li>
+            <li className="tech">
+              <mark className="react">React</mark>
             </li>
             <li className="tech">
               <mark className="solo">SOLO PROJECT</mark>
