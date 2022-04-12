@@ -13,10 +13,47 @@ import lunaMobile from "./Images/lunaMobile.png"
 import device from "./Images/LandingPageScreenshot.PNG";
 import zodailyWeb from "./Images/zodailyWeb.png";
 import zodailyMobile from "./Images/zodailyMobile.png";
+import katiuskabeads from "./Images/katiuskabeads.png";
+import katiuskabeadsmobile from "./Images/katiuskabeadsmobile.png";
 
 function Projects() {
   return (
     <div className="projects-section">
+      <div className="katiuska">
+        <div className="images">
+          <img className="laptop" src={katiuskabeads}></img>
+          <img className="mobile" src={katiuskabeadsmobile}></img>
+        </div>
+        <div className="caption">
+          <h3>KATIUSKA BEADS</h3>
+          <p>
+          Katiuska Beads is a dynamic responsive website for unique beaded jewelry business. Features include an ecommerce shop and contact form.
+          </p>
+          <ul>
+          <li className="tech">
+              <mark className="html">HTML</mark>
+            </li>
+            <li className="tech">
+              <mark className="css">CSS</mark>
+            </li>
+            <li className="tech">
+              <mark className="bs">Bootstrap</mark>
+            </li>
+            <li className="tech">
+              <mark className="js">JavaScript</mark>
+            </li>
+            <li className="tech">
+              <mark className="react">React</mark>
+            </li>
+            <li className="tech">
+              <mark className="solo">SOLO PROJECT</mark>
+            </li>
+          </ul>
+          <a href="https://www.katiuskabeads.net/">LIVE LINK</a>
+          <a href="https://github.com/ach0319/katiuska-beads">VIEW CODE</a>
+        </div>
+      </div>
+      <hr></hr>
       <div className="zodaily">
         <div className="images">
           <img className="laptop" src={zodailyWeb}></img>

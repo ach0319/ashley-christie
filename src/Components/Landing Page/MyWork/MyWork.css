@@ -15,7 +15,8 @@
 .When-RU-Free,
 .luna,
 .device-loaner,
-.zodaily {
+.zodaily,
+.katiuska {
   display: flex;
   flex-direction: row;
   width: 60%;
@@ -130,6 +131,17 @@ hr {
   margin-left: 1.5rem;
 }
 
+@media only screen and (max-width:1440px) {
+  .caption a {
+   padding: .75rem;
+   margin-left: 0rem;
+   font-size: .75rem
+  }
+
+  .mobile {
+    left: 53%;
+  }
+}
 @media only screen and (max-width: 1280px) {
   .mobile {
     height: 250px;
@@ -151,7 +163,9 @@ hr {
   .tutor-me,
   .When-RU-Free,
   .luna,
-  .device-loaner {
+  .device-loaner,
+  .zodaily,
+.katiuska {
     width: 75%;
   }
 }
@@ -177,7 +191,9 @@ hr {
   .tutor-me,
   .When-RU-Free,
   .luna,
-  .device-loaner {
+  .device-loaner,
+  .zodaily,
+.katiuska {
     width: 85%;
     padding-top: 10rem;
     display: flex;
@@ -238,7 +254,8 @@ hr {
   .tutor-me,
   .When-RU-Free,
   .luna,
-  .device-loaner {
+  .device-loaner, .zodaily,
+  .katiuska {
     display: flex;
     flex-direction: column;
     width: 90%;
